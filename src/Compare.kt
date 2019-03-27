@@ -10,4 +10,7 @@ fun main(args:Array<String>) {
     println("Values match2:  $match2")
 
     println("Comparison result:  ${num1.compareTo(num2)}")
+
+    //increase num2
+    println("num2 after increase:  ${num2.inc()}")
 }
