@@ -14,7 +14,7 @@ fun main() {
     val  person:String?
     when(name) {
         "VA" -> person = "Victor Amwollo"
-        "VI" -> person = "AMWOLLO VIC"
+        "VI" ->  person = "AMWOLLO VIC"
         else ->person  = "Unknown"
     }
 
