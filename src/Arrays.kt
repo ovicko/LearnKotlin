@@ -10,7 +10,7 @@ fun main() {
 
     val colorList:List<String> = listOf("Green","Black","Red")
     println(colorList)
-
+    //Mutable list of strings
     val colorList2 :MutableList<String> = mutableListOf("Green","Black","Red")
     colorList2.add("Yellow")
     colorList2.add("Purple")
