@@ -21,6 +21,16 @@ fun main() {
     colorList2.sortDescending()
     println(colorList2)
 
+//Maps in Kotlin
+    //immutable Map
+    val priceMap = mapOf(
+        Pair("shirt",50),
+        Pair("short",60),
+        Pair("skirt",70),
+        Pair("tie",80),
+        Pair("chair",540)
+    )
 
+    println(priceMap)
 
 }
