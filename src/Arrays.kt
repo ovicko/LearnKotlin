@@ -32,5 +32,21 @@ fun main() {
     )
 
     println(priceMap)
+    //Mutable map
+    val countyMap: MutableMap<Int, String> = mutableMapOf<Int, String>()
+    countyMap.put(47, "Nairobi")
+    countyMap.put(31, "Vihiga")
+    countyMap.put(46, "Kiambu")
+    countyMap.put(1, "Mombasa")
 
+    println(countyMap)
+
+    //loop through a map
+    for (code: Int in countyMap.keys) {
+        println("The code of ${countyMap.get(code)} is $code")
+    }
+    //loop through a map
+    for ((code: Int, county: String) in countyMap) {
+        println("The code of $county is $code")
+    }
 }
