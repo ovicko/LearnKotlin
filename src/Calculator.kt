@@ -1,4 +1,5 @@
 import oop.MathLib
+import oop.Operation.*
 
 fun main() {
 
@@ -9,14 +10,14 @@ fun main() {
      println(operation(num1 = n1,num2 = n2,option = option ))
 }
 
-fun operation(num1:Double ,num2:Double,option:String): Double {
-    val  result:Double
-    when(option) {
-        "-" -> result = MathLib.subtractValues(num1,num2)
-        "+" ->  result = MathLib.addValues(num1,num2)
-        "/" ->  result = MathLib.divideValues(num1,num2)
-        "*" ->  result = MathLib.multiplyValues(num1,num2)
-        else -> throw Exception("Unknown operation")
-    }
+fun operation(num1:Double ,num2:Double,option:String): Double? {
+    val  result:Double? =
+        when(option) {
+            ADD.operator ->  MathLib.addValues(num1,num2)
+            SUBTRACT.operator ->  MathLib.subtractValues(num1,num2)
+            MULTIPLY.operator ->  MathLib.multiplyValues(num1,num2)
+            DIVIDE.operator ->  MathLib.divideValues(num1,num2)
+            else -> throw Exception("Unknown operation")
+        }
     return  result
 }
